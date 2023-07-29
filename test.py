@@ -13,11 +13,11 @@ if "messages" not in st.session_state:
 for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg["content"])
 #     代理
-USE_PROXY = True
+USE_PROXY = False
 if USE_PROXY:
     proxies = {
         #          [协议]://  [地址]  :[端口]
-        "http":  "http://127.0.0.1:1128",  # 再例如  "http":  "http://127.0.0.1:7890",
+        "http":  "http://127.0.0.1:1128",  # 再例如  "http":  "http://127.0.0.1:7890", 
         "https": "http://127.0.0.1:1128",  # 再例如  "https": "http://127.0.0.1:7890",
     }
 else:
