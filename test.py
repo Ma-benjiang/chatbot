@@ -4,7 +4,7 @@ import streamlit as st
 with st.sidebar:
     openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
     "[获得一个OpenAI API key](https://platform.openai.com/account/api-keys)"
-    "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/Ma-benjiang/chatbot)" 
+    "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/Ma-benjiang)"  
 
 st.title("💬 Chatbot-Ma") 
 if "messages" not in st.session_state:
